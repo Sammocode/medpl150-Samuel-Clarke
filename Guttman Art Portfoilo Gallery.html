@@ -1,8 +1,97 @@
 <!doctype html>
 <html>
   <head>
-      <title> Guttman Art Portfoilo </title>
+      <title>The Arts of New York City – Guttman Art Portfoilo</title>
   </head>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("");
+      background-size: cover;
+      background-position: center;
+      font-family: "Michroma", Orbitron, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h1, h2 {
+      font-family: Verdana, sans-serif;
+      text-align: center;
+      color: maroon;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .art-piece {
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .art-piece img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #333;
+      margin-bottom: 10px;
+    }
+
+    .art-piece p {
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: maroon;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Verdana, sans-serif;
+      padding: 10px 20px;
+      border: 2px solid maroon;
+      border-radius: 5px;
+      background-color: #fff;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #fcc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-family: Verdana, sans-serif;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
   <body>
     <br>
   </br>
@@ -10,11 +99,10 @@
 <img src="Guttman_comm_college_logo.jpg" alt="Guttman Community College Logo" width="200" height="50">
 </center>
     <br></br>
-    <center>
-    <h1 style="font-family:verdana">Guttman Art Portfoilo Gallery (2022)</h1>
-
-    <h2 style="font-family:verdana">The Arts in New York City:</h2>
-      </center>
+      <div class="container">
+    <h1>The Arts of New York City</h1>
+    <h2>Guttman Art Portfolio Gallery</h2>
+    <div class="gallery">
     <br>
   </br>
     <center>
@@ -168,14 +256,16 @@
       in high school in different outfits of variations. I do have some struggles with having the best face, I just know that not everyone is not perfect. 
       I'm glad that I am flawed and appreciate who I am as a person. Without these sketches and artwork all over the years, I'm nothing, to be honest. </p>
     <br></br>
-      </center>
-    <center>
+     </div>
+    </div>
+
     <nav>
-    <a href="index.html"; style="color: maroon; text-decoration: none; font-size: 20 px; font-weight: bold;font-family:verdana;">Homebase: Return to Visual Logic Hub</a>
-</nav>
-    <body>
-   <footer>
-    <p style="font-family:verdana">© Westward Equinox, 2025, Samuel Clarke - MEDPL 150 Visual Communication & Interactive Design</p>
-   </footer>
-      </center>
+      <a href="index.html">Homebase: Return to Visual Logic Hub</a>
+    </nav>
+
+    <footer>
+      <p>© Westward Equinox, 2025 — Samuel Clarke | MEDPL 150 Visual Communication & Interactive Design</p>
+    </footer>
+  </div>
 </body>
+</html>
