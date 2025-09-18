@@ -1,47 +1,111 @@
 <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 3: Images Part 2 – Samuel Clarke</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("https://i.pinimg.com/originals/2c/79/79/2c79797f8479ee631db33049d97b91b7.gif");
+      background-size: cover;
+      background-position: center;
+      font-family: "Michroma", Orbitron, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
 
-<html>
+    .container {
+      width: 85%;
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    }
 
-  <head>
+    h1, h2 {
+      font-family: Verdana, sans-serif;
+      text-align: center;
+      color: maroon;
+    }
 
-    <title>Assignment 3: Images Part 2</title>
+    h3 {
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      font-weight: normal;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
 
-  </head>
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border: 2px solid #000;
+    }
 
-  <body>
-<center>
-    <h1 style="font-family:verdana">Assignment 2 Images: Part 2</h1>
-<section>
-  <center>
-    <h2 style="font-family:verdana">Here are the Second Sets of Images for Assignment 3:</h2>
+    nav {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-    <h2 style="font-family:verdana">Trees</h2>
- <img src="Before Image1.jpg" alt="Assignment 3: Image Part 2" width="600">
-  <h3 style="font-family:'Courier New'"><strong>Figure 1</strong>: Before Raw Image 1 (760 KB File)</h3>
-    <br><br>
-    <img src="After Edited Image1.jpg" alt="Assignment 3: Image Part 2" width="600">
-    <h3 style="font-family:'Courier New'"><strong>Figure 2</strong>: After Photoshop Edited Image 1 (1.4 MB File)</h3>
-    <br><br>
-    <h2 style="font-family:verdana">Trash Cans</h2>
-     <img src="Before Image2.jpg" alt="Assignment 3: Image Part 2" width="600">
-  <h3 style="font-family:'Courier New'"><strong>Figure 3</strong>: Before Raw Image 2 (1.3 MB File)</h3>
-  <br><br>
-     <img src="After Edited Image2.jpg" alt="Assignment 3: Image Part 2" width="600">
-  <h3 style="font-family:'Courier New'"><strong>Figure 4</strong>: After Photoshop Edited Image 2 (1.6 MB File)</h3>
-    <br><br>
-    </center>
-  </section>
-</center>
-<div></div>
-    <br><br>
-    <center>
-<nav>
-    <a href="index.html"; style="color: maroon; text-decoration: none; font-size: 20 px; font-weight: bold;font-family:verdana;" >Homebase: Return to Visual Logic Hub</a>
+    nav a {
+      color: maroon;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Verdana, sans-serif;
+      padding: 10px 20px;
+      border: 2px solid maroon;
+      border-radius: 5px;
+      background-color: #fff;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #fcc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-family: Verdana, sans-serif;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Assignment 3: Images Part 2</h1>
+    <h2>Here are the Second Sets of Images for Assignment 3</h2>
+
+    <h2>Trees</h2>
+    <img src="Before Image1.jpg" alt="Before Raw Image 1">
+    <h3><strong>Figure 1</strong>: Before Raw Image 1 (760 KB File)</h3>
+
+    <img src="After Edited Image1.jpg" alt="After Edited Image 1">
+    <h3><strong>Figure 2</strong>: After Photoshop Edited Image 1 (1.4 MB File)</h3>
+
+    <h2>Trash Cans</h2>
+    <img src="Before Image2.jpg" alt="Before Raw Image 2">
+    <h3><strong>Figure 3</strong>: Before Raw Image 2 (1.3 MB File)</h3>
+
+    <img src="After Edited Image2.jpg" alt="After Edited Image 2">
+    <h3><strong>Figure 4</strong>: After Photoshop Edited Image 2 (1.6 MB File)</h3>
+
+    <nav>
+      <a href="index.html">Homebase: Return to Visual Logic Hub</a>
     </nav>
-    <footer>
-    <p style="font-family:verdana">© Westward Equinox, 2025, Samuel Clarke - MEDPL 150 Visual Communication & Interactive Design</p>
-  </footer>
-    </center>
-  </body>
 
+    <footer>
+      <p>© Westward Equinox, 2025 — Samuel Clarke | MEDPL 150 Visual Communication & Interactive Design</p>
+    </footer>
+  </div>
+</body>
 </html>
+
