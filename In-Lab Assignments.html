@@ -76,6 +76,22 @@
       font-size: 14px;
       color: #555;
     }
+    * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   </style>
 </head>
 
@@ -83,25 +99,22 @@
   <div class="container">
     <h1>In-Lab Assignments</h1>
     <h2>Demo Collage - Bird vs Space-Ship in Space!</h2>
-
+<div class="row">
+  <div class="column">
     <img src="Demo-Collage3.jpg" Alt="Bird vs Space-Ship in Space!">
-    
-    <br></br>
-     <h2>Behind the Scenes Layers in Photoshop</h2>
-    
+    <h2>Behind the Scenes Layers in Photoshop</h2>
     <img src="Demo-Collage Photoshop Layers.png" Alt="Bird vs Space-Ship in Space! Layers">
-
-    <br></br>
-    
-    <h2>Eye Design</h2>
-    
+  </div>
+   <h2>Eye Design</h2>
+  <div class="column">
     <img src="Eye Design2.png" Alt="Eye Design">
-    <br></br>
-
     <h2>Eye Design Layers in Illustrator</h2>
-    
     <img src="Eye Design Layers2.png" Alt="Eye Design Layers">
-
+  </div>
+  <div class="column">
+    
+  </div>
+</div>
     <br></br>
     <nav>
       <a href="index.html">Homebase: Return to Visual Logic Hub</a>
