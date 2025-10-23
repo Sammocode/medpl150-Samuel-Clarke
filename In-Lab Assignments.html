@@ -35,7 +35,7 @@
     img {
       display: block;
       margin: 20px auto;
-      width: 61%;
+      width: 100%;
       border: 2px solid #000;
     }
 
@@ -75,23 +75,34 @@
       font-family: Verdana, sans-serif;
       font-size: 14px;
       color: #555;
+      
+      .image-gallery {
+  display: flex;       /* Use Flexbox for layout */
+  flex-wrap: wrap;     /* Allow images to wrap to the next line */
+  gap: 1rem;           /* Add space between the images */
+}
+
+.image-gallery img {
+  max-width: 100%;     /* Ensure the image is never wider than its container */
+  height: auto;        /* Maintain the image's original aspect ratio */
+  flex: 1 1 300px;     /* Allow images to grow, shrink, and wrap based on the screen size */
+  object-fit: cover;   /* Fill the space without distortion, if needed for a uniform grid */
+}
+
   </style>
 </head>
 
 <body>
   <div class="container">
   <h1>In-Lab Assignments</h1>
-<div class="gallery-container">
-  <div class="gallery-item">
-    
-    <h2>Bird vs Space-Ship in Space! Collage (Photoshop)</h2>
+    <div class="image-gallery">
+       <!-- A vertical (portrait) image -->
+  <h2>Bird vs Space-Ship in Space! Collage (Photoshop)</h2>
     <img src="Demo-Collage3.jpg" alt="Bird vs Space-Ship in Space!">
-  </div>
-  <br>
-  <div class="gallery-item">
-    <h2>Eye Design (Illustrator)</h2>
+    <br>
+  <!-- A horizontal (landscape) image -->
+  <h2>Eye Design (Illustrator)</h2>
       <img src="Eye Design2.png" alt="Eye Design">
-  </div>
 </div>
 <br></br>
   <nav>
