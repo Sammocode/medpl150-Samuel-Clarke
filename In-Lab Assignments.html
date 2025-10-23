@@ -76,28 +76,58 @@
       font-size: 14px;
       color: #555;
     }
-   .image-grid {
-  display: grid; /* Creates a grid container */
-  grid-template-columns: repeat(3, 1fr); /* Defines three equal-width columns */
-  gap: 15px; /* Adds consistent spacing between all grid items */
+ .gallery-container {
+  display: flex; /* Establishes a flex container */
+  justify-content: space-between; /* Distributes items evenly with space in between */
+  gap: 20px; /* Adds space between the gallery items */
 }
+
+.gallery-item {
+  /* This container handles the vertical stacking of text and image */
+  display: flex;
+  flex-direction: column; /* Stacks the child elements vertically */
+  align-items: center; /* Centers the content (text and image) */
+  text-align: center; /* Centers the text */
+}
+
+.gallery-item img {
+  width: 100%; /* Ensures the image fills its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  margin-top: 10px; /* Adds a bit of space between the text and image */
+}
+
   </style>
 </head>
 
 <body>
   <div class="container">
   <h1>In-Lab Assignments</h1>
+      
+<div class="gallery-container">
 
-    <div class="image-grid">
-      <h2>Bird vs Space-Ship in Space! Collage</h2>
-      <img src="Demo-Collage3.jpg" alt="Bird vs Space-Ship in Space!" style="width:100%">
+  <div class="gallery-item">
+    
+    <h2>Bird vs Space-Ship in Space! Collage</h2>
+    <img src="Demo-Collage3.jpg" alt="Bird vs Space-Ship in Space!">
+  </div>
+
+  <div class="gallery-item">
       <h2>Layers in Photoshop</h2>
       <img src="Demo-Collage Photoshop Layers.png" alt="Bird vs Space-Ship in Space! Layers">
-      <h2>Eye Design</h2>
+  </div>
+
+  <div class="gallery-item">
+    <h2>Eye Design</h2>
       <img src="Eye Design2.png" alt="Eye Design">
-      <h2>Eye Design Layers in Illustrator</h2>
+  </div>
+  
+<div class="gallery-item">
+     <h2>Eye Design Layers in Illustrator</h2>
       <img src="Eye Design Layers2.png" alt="Eye Design Layers">
-    </div>
+  </div>
+
+
+</div>
 
   <nav>
     <a href="index.html">Homebase: Return to Visual Logic Hub</a>
