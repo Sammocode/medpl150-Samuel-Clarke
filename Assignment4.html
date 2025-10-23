@@ -81,26 +81,39 @@
       font-size: 14px;
       color: #555;
     }
+    .gallery-container {
+  display: flex; /* Establishes a flex container */
+  justify-content: space-between; /* Distributes items evenly with space in between */
+  gap: 20px; /* Adds space between the gallery items */
+}
+
+.gallery-item {
+  /* This container handles the vertical stacking of text and image */
+  display: flex;
+  flex-direction: column; /* Stacks the child elements vertically */
+  align-items: center; /* Centers the content (text and image) */
+  text-align: center; /* Centers the text */
+}
   </style>
 </head>
 <body>
   <html>
   <div class="container">
     <h1>Assignment 4: Collages</h1>
-    
-    <div class="row">
-  <div class="column">
-    <h2>Glyph Drift: The Grid Holds</h2>
+    <div class="gallery-container">
+
+  <div class="gallery-item">
+     <h2>Glyph Drift: The Grid Holds</h2>
     <h3>Masking Backgrounds</h3>
     <img src="Frutiger Nature vs Corporate Technology Collage Part 1.jpg" alt="Nature vs Corporation Part 1">
   </div>
 
-  <div class="column">
+  <div class="gallery-item">
     <h2>Glyph Drift 2: Interface in the System</h2>
     <h3>Blending Assets</h3>
     <img src="Frutiger Nature vs Corporate Technology Collage Part 2.jpg" alt="Nature vs Corporation Part 2">
   </div>
-</div>
+    
       <br>
       <h3>My Inspiration of these Collage Pieces</h3>
     <p>The <strong><em>Glyph Drift</em></strong> series, also known as <strong><em>Frutiger: Nature vs Corporate Technology</em></strong>, explores sociopolitical and ecological tension through collage compositions 
@@ -120,17 +133,15 @@
        collage illustration story.</p>
       
 <br></br>
-  <div class="row">
-  <div class="column">
+    <div class="gallery-item">
     <h3>Behind the Scenes – Layer 1</h3>
     <img src="Photoshop Layer 1.png" alt="Behind the Scenes Layer 1">
   </div>
 
-  <div class="column">
+    <div class="gallery-item">
     <h3>Behind the Scenes – Layer 2</h3>
     <img src="Photoshop Layer 2.png" alt="Behind the Scenes Layer 2">
   </div>
-</div>
 
    
     <br></br>
