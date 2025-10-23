@@ -81,17 +81,25 @@
       font-size: 14px;
       color: #555;
     }
-    .gallery-container {
-  display: flex; /* Establishes a flex container */
-  justify-content: space-between; /* Distributes items evenly with space in between */
-  gap: 2px; /* Adds space between the gallery items */
+ .grid-container {
+  display: grid;
+  /* Automatically create as many 250px-wide columns as will fit */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Space between grid items */
 }
 
-.gallery-item {
-  /* This container handles the vertical stacking of text and image */
-  display: flex;
-  flex-direction: column; /* Stacks the child elements vertically */
-  align-items: center; /* Centers the content (text and image) */
+.grid-item {
+  display: flex; /* Flexbox is good for arranging content inside each item */
+  flex-direction: column; /* Stacks the content vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.grid-item img {
+  width: 100%; /* Make images fill their container */
+  height: auto; /* Preserve aspect ratio */
+  display: block;
 }
   </style>
 </head>
@@ -99,18 +107,19 @@
   <html>
   <div class="container">
     <h1>Assignment 4: Collages</h1>
-    <div class="gallery-container">
+<div class="grid-container">
 
-  <div class="gallery-item">
-     <h2>Glyph Drift: The Grid Holds</h2>
+  <div class="grid-item">
+   <img src="Frutiger Nature vs Corporate Technology Collage Part 1.jpg" alt="Nature vs Corporation Part 1">
+    <h2>Glyph Drift: The Grid Holds</h2>
     <h3>Masking Backgrounds</h3>
-    <img src="Frutiger Nature vs Corporate Technology Collage Part 1.jpg" alt="Nature vs Corporation Part 1">
   </div>
 
-  <div class="gallery-item">
-    <h2>Glyph Drift 2: Interface in the System</h2>
+  <div class="grid-item">
+   <img src="Frutiger Nature vs Corporate Technology Collage Part 2.jpg" alt="Nature vs Corporation Part 2">
+  <h2>Glyph Drift 2: Interface in the System</h2>
     <h3>Blending Assets</h3>
-    <img src="Frutiger Nature vs Corporate Technology Collage Part 2.jpg" alt="Nature vs Corporation Part 2">
+  </div>
   </div>
     
       <br>
@@ -132,16 +141,18 @@
        collage illustration story.</p>
       
 <br></br>
-    <div class="gallery-item">
+   <div class="grid-container">
+  <div class="grid-item">
     <h3>Behind the Scenes – Layer 1</h3>
     <img src="Photoshop Layer 1.png" alt="Behind the Scenes Layer 1">
   </div>
 
-    <div class="gallery-item">
+    <div class="grid-item">
     <h3>Behind the Scenes – Layer 2</h3>
     <img src="Photoshop Layer 2.png" alt="Behind the Scenes Layer 2">
   </div>
 
+</div>
    
     <br></br>
  </center>
