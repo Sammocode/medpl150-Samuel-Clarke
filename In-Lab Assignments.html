@@ -76,6 +76,11 @@
       font-size: 14px;
       color: #555;
     }
+   .image-grid {
+  display: grid; /* Creates a grid container */
+  grid-template-columns: repeat(3, 1fr); /* Defines three equal-width columns */
+  gap: 15px; /* Adds consistent spacing between all grid items */
+}
   </style>
 </head>
 
@@ -83,24 +88,16 @@
   <div class="container">
   <h1>In-Lab Assignments</h1>
 
-  <div class="row">
-    <div class="column">
+    <div class="image-grid">
       <h2>Bird vs Space-Ship in Space! Collage</h2>
       <img src="Demo-Collage3.jpg" alt="Bird vs Space-Ship in Space!" style="width:100%">
-    </div>
-    <div class="column">
       <h2>Layers in Photoshop</h2>
       <img src="Demo-Collage Photoshop Layers.png" alt="Bird vs Space-Ship in Space! Layers">
-    </div>
-    <div class="column">
       <h2>Eye Design</h2>
       <img src="Eye Design2.png" alt="Eye Design">
-    </div>
-    <div class="column">
       <h2>Eye Design Layers in Illustrator</h2>
       <img src="Eye Design Layers2.png" alt="Eye Design Layers">
     </div>
-  </div>
 
   <nav>
     <a href="index.html">Homebase: Return to Visual Logic Hub</a>
